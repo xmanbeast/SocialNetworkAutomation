@@ -1,0 +1,50 @@
+{
+  "body_iq_style": {
+    "nombre": "body_iq_style",
+    "descripcion": "Estilo infográfico con etiqueta de marca, círculo superior y texto inferior bicolor.",
+    "campos_ia": [
+      "brand_label",
+      "text_part1",
+      "keyword_yellow1",
+      "text_part2",
+      "keyword_yellow2",
+      "caption",
+      "image_prompt_details"
+    ],
+    "overlays": [
+      {
+        "tipo": "gradiente_vertical",
+        "y_inicio_pct": 30,
+        "altura_pct": 70,
+        "color": [0, 0, 0],
+        "alpha_inicio": 0,
+        "alpha_fin": 240
+      }
+    ],
+    "elementos": [
+      {
+        "tipo": "marca_con_lineas",
+        "placeholder": "brand_label",
+        "valor_fijo": "Sabías qué",
+        "x_pct": 50,
+        "y_pct": 57,
+        "tamano": 61,
+        "color_rgb": [255, 204, 0]
+      },
+      {
+        "tipo": "texto_bicolor",
+        "bloques": [
+          {"texto": "text_part1", "color": [255, 255, 255]},
+          {"texto": "keyword_yellow1", "color": [255, 204, 0]},
+          {"texto": "text_part2", "color": [255, 255, 255]},
+          {"texto": "keyword_yellow2", "color": [255, 204, 0]}
+        ],
+        "x_pct": 8,
+        "y_pct": 66,
+        "ancho_max_pct": 90,
+        "fuente": "bold",
+        "tamano": 42
+      }
+    ]
+  }
+}
